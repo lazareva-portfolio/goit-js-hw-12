@@ -4,21 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HW JS 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <form class="form" id="search-form">
+      <input class="input-search" type="text" id="keyword-search" placeholder="Search images...">
+      <button type="submit" class="button-search-images">Search</button>
+    </form>
+    <div class="gallery" id="gallery"></div>
+    <button class="load-more-button" style="display:none">Load more</button>
+    <p class="end-message" style="display:none">We're sorry, but you've reached the end of search results.</p>
 
-    <script type="module" src="./main.js"></script>
+
+<script type="module" src="./js/pixabay-api.js"></script>
+<script type="module" src="./js/render-functions.js"></script>
+<script type="module" src="./main.js"></script>
   </body>
 </html>
